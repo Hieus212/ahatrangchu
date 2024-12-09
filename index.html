@@ -6,22 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Car Rental</title>
     <style>
-        /* Reset margin và padding của các phần tử mặc định */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* Các màu sắc chính */
         body {
+            background-color: #F3EFE0; /* Nền sáng */
             font-family: Arial, sans-serif;
-            background-color: #F3EFE0; /* Màu nền nhẹ */
             color: #434242; /* Màu chữ chính */
         }
 
         header {
-            background-color: #22A39F; /* Màu xanh lá biển */
-            color: #F3EFE0; /* Màu chữ sáng trên nền tối */
+            background-color: #22A39F; /* Màu xanh lá biển cho header */
+            color: #F3EFE0; /* Màu chữ sáng */
             padding: 20px;
             text-align: center;
         }
@@ -30,36 +24,69 @@
             font-size: 36px;
         }
 
-        nav {
-            margin-top: 20px;
-        }
-
         nav ul {
             list-style-type: none;
+            padding: 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            margin-top: 10px;
         }
 
         nav ul li {
-            display: inline-block;
+            margin: 0 15px;
         }
 
         nav ul li a {
-            color: #F3EFE0;
             text-decoration: none;
+            color: #F3EFE0;
             font-size: 18px;
-            padding: 10px 20px;
+            padding: 10px;
             border-radius: 5px;
         }
 
         nav ul li a:hover {
             background-color: #434242; /* Màu nền khi hover */
-            color: #F3EFE0; /* Màu chữ khi hover */
+            color: #F3EFE0;
+        }
+
+        .car-info {
+            margin: 30px auto;
+            width: 80%;
+        }
+
+        .car-info h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .car-info img {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .car-details {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #222222;
+        }
+
+        .car-details th, .car-details td {
+            padding: 10px;
+            border: 1px solid #222222;
+            text-align: center;
+        }
+
+        .car-details th {
+            background-color: #22A39F;
+            color: #F3EFE0;
         }
 
         footer {
-            background-color: #222222; /* Màu nền footer */
+            background-color: #222222; /* Footer với màu tối */
             color: #F3EFE0;
             text-align: center;
             padding: 10px;
@@ -67,15 +94,13 @@
             width: 100%;
             bottom: 0;
         }
-
     </style>
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Car Rental</h1>
-        <p>Chúng tôi cung cấp dịch vụ thuê ô tô chất lượng cao với mức giá hợp lý!</p>
-
         <nav>
             <ul>
                 <li><a href="#">Trang chủ</a></li>
@@ -86,6 +111,40 @@
         </nav>
     </header>
 
+    <!-- Giới thiệu về ô tô cho thuê -->
+    <div class="car-info">
+        <h1>Giới thiệu về ô tô cho thuê</h1>
+        <img src="car-image.jpg" alt="Ô tô cho thuê">
+
+        <table class="car-details">
+            <tr>
+                <th>Thông tin</th>
+                <th>Chi tiết</th>
+            </tr>
+            <tr>
+                <td>Hãng xe</td>
+                <td>Honda</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>Civic 2024</td>
+            </tr>
+            <tr>
+                <td>Giá thuê (1 ngày)</td>
+                <td>1,000,000 VND</td>
+            </tr>
+            <tr>
+                <td>Màu sắc</td>
+                <td>Đen</td>
+            </tr>
+            <tr>
+                <td>Kiểu xe</td>
+                <td>Sedan</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Car Rental. Tất cả quyền được bảo lưu.</p>
     </footer>
