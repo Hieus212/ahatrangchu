@@ -4,150 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Car Rental</title>
+    <title>Trang HTML với các phần tử div</title>
     <style>
-        /* Các màu sắc chính */
-        body {
-            background-color: #F3EFE0; /* Nền sáng */
-            font-family: Arial, sans-serif;
-            color: #434242; /* Màu chữ chính */
+        /* Lớp CSS cho phần tử item */
+        .item {
+            width: 200px;               /* Độ rộng 200px */
+            height: 50px;               /* Chiều cao 50px */
+            background-color: #F3EFE0;  /* Màu nền cho item */
+            margin: 10px;               /* Khoảng cách giữa các phần tử */
+            border: 1px solid #434242;  /* Viền màu xám đậm */
         }
 
-        header {
-            background-color: #22A39F; /* Màu xanh lá biển cho header */
-            color: #F3EFE0; /* Màu chữ sáng */
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #F3EFE0;
-            font-size: 18px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        nav ul li a:hover {
-            background-color: #434242; /* Màu nền khi hover */
-            color: #F3EFE0;
-        }
-
-        .car-info {
-            margin: 30px auto;
-            width: 80%;
-        }
-
-        .car-info h1 {
-            text-align: center;
-            font-size: 28px;
-        }
-
-        .car-info img {
-            display: block;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-        }
-
-        .car-details {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            border: 1px solid #222222;
-        }
-
-        .car-details th, .car-details td {
-            padding: 10px;
-            border: 1px solid #222222;
-            text-align: center;
-        }
-
-        .car-details th {
-            background-color: #22A39F;
-            color: #F3EFE0;
-        }
-
-        footer {
-            background-color: #222222; /* Footer với màu tối */
-            color: #F3EFE0;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        /* Lớp CSS cho phần tử feature */
+        .feature {
+            width: 100%;                /* Độ rộng 100% */
+            height: 200px;              /* Chiều cao 200px */
+            background-color: #22A39F;  /* Màu nền cho feature */
+            border: 2px solid #222222; /* Đường viền màu đen */
+            margin: 20px 0;             /* Khoảng cách trên và dưới */
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Car Rental</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Giá thuê</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- 5 phần tử div với class "item" -->
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
 
-    <!-- Giới thiệu về ô tô cho thuê -->
-    <div class="car-info">
-        <h1>Giới thiệu về ô tô cho thuê</h1>
-        <img src="car-image.jpg" alt="Ô tô cho thuê">
-
-        <table class="car-details">
-            <tr>
-                <th>Thông tin</th>
-                <th>Chi tiết</th>
-            </tr>
-            <tr>
-                <td>Hãng xe</td>
-                <td>Honda</td>
-            </tr>
-            <tr>
-                <td>Model</td>
-                <td>Civic 2024</td>
-            </tr>
-            <tr>
-                <td>Giá thuê (1 ngày)</td>
-                <td>1,000,000 VND</td>
-            </tr>
-            <tr>
-                <td>Màu sắc</td>
-                <td>Đen</td>
-            </tr>
-            <tr>
-                <td>Kiểu xe</td>
-                <td>Sedan</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Car Rental. Tất cả quyền được bảo lưu.</p>
-    </footer>
+    <!-- Một phần tử div với class "feature" -->
+    <div class="feature"></div>
 
 </body>
 </html>
