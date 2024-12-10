@@ -122,19 +122,23 @@
         .banner {
             margin: 20px auto;
             padding: 20px;
-            background-color: var(--yellow);
+            background-image: url('https://via.placeholder.com/1200x400?text=Pet+Care+Service+Banner'); /* Chèn ảnh vào banner */
+            background-size: cover;
+            background-position: center;
             border: 2px solid var(--olive);
             width: 90%;
             text-align: center;
             border-radius: 10px;
+            color: white;
+            font-size: 24px;
+            font-style: italic;
             transition: all 0.3s ease;
         }
 
         .banner:hover {
             background-color: var(--olive);
+            background-image: url('https://via.placeholder.com/1200x400?text=Pet+Care+Service+Banner+Hover'); /* Chèn ảnh thay đổi khi hover */
             border-color: var(--yellow);
-            color: white;
-            font-style: italic;
         }
 
         /* Dịch vụ chăm sóc thú cưng */
@@ -160,6 +164,13 @@
         .item:hover {
             transform: scale(1.05);
             border-color: var(--olive);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         /* Form */
@@ -292,18 +303,22 @@
     <!-- Dịch Vụ -->
     <section class="services">
         <div class="item">
+            <img src="https://via.placeholder.com/300x200.png?text=Pet+Care+1" alt="Dịch Vụ Tắm">
             <h3>Dịch Vụ Tắm Cho Thú Cưng</h3>
             <p>Chúng tôi cung cấp dịch vụ tắm cho mọi loại thú cưng.</p>
         </div>
         <div class="item">
+            <img src="https://via.placeholder.com/300x200.png?text=Pet+Care+2" alt="Cắt Lông">
             <h3>Dịch Vụ Cắt Lông Thú Cưng</h3>
             <p>Cắt lông, tỉa tót cho thú cưng của bạn thêm đẹp.</p>
         </div>
         <div class="item">
+            <img src="https://via.placeholder.com/300x200.png?text=Pet+Care+3" alt="Chăm Sóc Sức Khỏe">
             <h3>Dịch Vụ Vệ Sinh Sức Khỏe</h3>
             <p>Chúng tôi chăm sóc sức khỏe cho thú cưng của bạn.</p>
         </div>
         <div class="item">
+            <img src="https://via.placeholder.com/300x200.png?text=Pet+Care+4" alt="Đào Tạo">
             <h3>Dịch Vụ Đào Tạo Thú Cưng</h3>
             <p>Đào tạo những thói quen tốt cho thú cưng của bạn.</p>
         </div>
