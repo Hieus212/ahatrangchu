@@ -59,7 +59,7 @@
 
         /* Đảm bảo nội dung không bị che khuất bởi nav */
         body {
-            padding-top: 60px; /* Để tránh nội dung bị che khuất bởi nav cố định */
+            padding-top: 60px;
         }
 
         header {
@@ -73,7 +73,6 @@
             margin: 0;
         }
 
-        /* Logo SVG */
         .logo {
             width: 50px;
             height: 50px;
@@ -95,6 +94,28 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        /* Styling cho bài viết */
+        .intro-article h2 {
+            color: var(--green);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .intro-article p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .intro-article strong {
+            color: var(--brown);
+        }
+
+        .intro-article ul {
+            list-style-type: square;
+            margin: 10px 0;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -123,8 +144,30 @@
 
     <!-- Main Content -->
     <section class="container">
-        <h2>Chào Mừng Đến Với Dịch Vụ Chăm Sóc Thú Cưng</h2>
-        <p>Chúng tôi cung cấp các dịch vụ chăm sóc thú cưng chất lượng với đội ngũ chuyên nghiệp và yêu thương động vật. Hãy để chúng tôi chăm sóc cho người bạn bốn chân của bạn.</p>
+        <h2>Giới Thiệu Dịch Vụ Chăm Sóc Thú Cưng</h2>
+
+        <div class="intro-article">
+            <h2>Chúng Tôi Là Ai?</h2>
+            <p>
+                <strong>Pet Care Service</strong> là một dịch vụ chăm sóc thú cưng chuyên nghiệp, được thành lập với sứ mệnh mang lại sự chăm sóc tận tâm cho những người bạn bốn chân của bạn.
+                Chúng tôi cam kết cung cấp các dịch vụ chất lượng cao, giúp thú cưng của bạn luôn khỏe mạnh và hạnh phúc.
+            </p>
+
+            <h2>Chúng Tôi Cung Cấp Các Dịch Vụ:</h2>
+            <ul>
+                <li><strong>Chăm sóc sức khỏe:</strong> Chúng tôi cung cấp các dịch vụ khám sức khỏe định kỳ, tiêm phòng, và điều trị bệnh cho thú cưng.</li>
+                <li><strong>Chăm sóc đặc biệt:</strong> Dịch vụ tắm rửa, cắt tỉa lông, và cắt móng cho thú cưng của bạn.</li>
+                <li><strong>Vận chuyển thú cưng:</strong> Chúng tôi cung cấp dịch vụ vận chuyển an toàn cho thú cưng khi bạn cần đi xa.</li>
+                <li><strong>Chăm sóc tình cảm:</strong> Các nhân viên của chúng tôi sẽ dành thời gian chơi đùa và chăm sóc tinh thần cho thú cưng của bạn.</li>
+            </ul>
+
+            <h2>Vì Sao Chọn Chúng Tôi?</h2>
+            <p>
+                <strong>Pet Care Service</strong> luôn đặt sự an toàn và hạnh phúc của thú cưng lên hàng đầu. Với đội ngũ nhân viên giàu kinh nghiệm và tình yêu thương động vật, chúng tôi đảm bảo mang đến cho thú cưng của bạn một môi trường chăm sóc tuyệt vời. Chúng tôi hiểu rằng mỗi thú cưng đều có tính cách và nhu cầu riêng, vì vậy chúng tôi luôn tùy chỉnh dịch vụ theo từng trường hợp cụ thể.
+            </p>
+
+            <p><em>Đến với chúng tôi, thú cưng của bạn sẽ được chăm sóc như chính gia đình của mình!</em></p>
+        </div>
     </section>
 
     <!-- Footer -->
