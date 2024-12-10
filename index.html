@@ -3,39 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang HTML với các phần tử div</title>
+    <title>Pet Care Service</title>
     <style>
-        /* Lớp CSS cho phần tử item */
-        .item {
-            width: 200px;               /* Độ rộng 200px */
-            height: 50px;               /* Chiều cao 50px */
-            background-color: #F3EFE0;  /* Màu nền cho item */
-            margin: 10px;               /* Khoảng cách giữa các phần tử */
-            border: 1px solid #434242;  /* Viền màu xám đậm */
+        /* Màu sắc yêu cầu */
+        :root {
+            --green: #78be20;
+            --brown: #614d00;
+            --yellow: #ffd100;
+            --olive: #658d1b;
+            --lightyellow: #d0d058;
         }
 
-        /* Lớp CSS cho phần tử feature */
-        .feature {
-            width: 100%;                /* Độ rộng 100% */
-            height: 200px;              /* Chiều cao 200px */
-            background-color: #22A39F;  /* Màu nền cho feature */
-            border: 2px solid #222222; /* Đường viền màu đen */
-            margin: 20px 0;             /* Khoảng cách trên và dưới */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--green);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Logo SVG */
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: var(--brown);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: var(--olive);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- 5 phần tử div với class "item" -->
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
+    <!-- Header -->
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="var(--yellow)"/>
+                <path fill="white" d="M12 6C10.34 6 9 7.34 9 9C9 10.66 10.34 12 12 12C13.66 12 15 10.66 15 9C15 7.34 13.66 6 12 6ZM12 10C11.45 10 11 9.55 11 9C11 8.45 11.45 8 12 8C12.55 8 13 8.45 13 9C13 9.55 12.55 10 12 10ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z"/>
+            </svg>
+            <h1>Pet Care Service</h1>
+        </div>
+    </header>
 
-    <!-- Một phần tử div với class "feature" -->
-    <div class="feature"></div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Dịch Vụ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="#">Liên Hệ</a>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container">
+        <h2>Chào Mừng Đến Với Dịch Vụ Chăm Sóc Thú Cưng</h2>
+        <p>Chúng tôi cung cấp các dịch vụ chăm sóc thú cưng chất lượng với đội ngũ chuyên nghiệp và yêu thương động vật. Hãy để chúng tôi chăm sóc cho người bạn bốn chân của bạn.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pet Care Service. Tất cả các quyền được bảo lưu.</p>
+    </footer>
 
 </body>
 </html>
