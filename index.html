@@ -117,6 +117,120 @@
             margin: 10px 0;
             padding-left: 20px;
         }
+
+        /* Banner */
+        .banner {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--yellow);
+            border: 2px solid var(--olive);
+            width: 90%;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .banner:hover {
+            background-color: var(--olive);
+            border-color: var(--yellow);
+            color: white;
+            font-style: italic;
+        }
+
+        /* Dịch vụ chăm sóc thú cưng */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .item {
+            background-color: #ffffff;
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid var(--olive);
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            border-color: var(--olive);
+        }
+
+        /* Form */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: var(--green);
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--brown);
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        /* Thiết kế đáp ứng */
+        @media (max-width: 414px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .item {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 415px) and (max-width: 1024px) {
+            .container {
+                width: 80%;
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .container {
+                width: 50%;
+                padding: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -169,331 +283,164 @@
             <p><em>Đến với chúng tôi, thú cưng của bạn sẽ được chăm sóc như chính gia đình của mình!</em></p>
         </div>
     </section>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Câu 2</title>
-        <style>
-            /* CSS cho class item */
-            .item {
-                width: 200px; /* Độ rộng */
-                height: 150px; /* Chiều cao */
-                background-color: #d0d058; /* Màu nền */
-                margin: 10px; /* Khoảng cách giữa các phần tử */
-                display: inline-block; /* Để các phần tử xuất hiện ngang nhau */
-                text-align: center; /* Canh giữa nội dung */
-                line-height: 150px; /* Canh giữa văn bản theo chiều dọc */
-                border-radius: 5px; /* Bo tròn các góc */
-            }
-    
-            /* CSS cho class banner */
-            .banner {
-                width: 100%; /* Độ rộng 100% */
-                height: 200px; /* Chiều cao 200px */
-                background-color: #614d00; /* Màu nền khác với item */
-                border: 2px solid #ffd100; /* Viền 2px, màu vàng */
-                box-sizing: border-box; /* Đảm bảo viền không làm thay đổi kích thước tổng thể */
-                text-align: center;
-                color: white;
-                line-height: 200px; /* Canh giữa văn bản theo chiều dọc */
-                font-size: 24px;
-            }
-        </style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Câu 3 - Dịch Vụ Chăm Sóc Thú Cưng</title>
-    <style>
-        .service {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            width: 300px;
-            text-align: center;
-        }
-        .service img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
 
-    <h1>Dịch Vụ Chăm Sóc Thú Cưng</h1>
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Khám Phá Dịch Vụ Chăm Sóc Thú Cưng Tuyệt Vời</h2>
+    </div>
 
-    <div id="services-container"></div> <!-- Container để chứa các dịch vụ -->
+    <!-- Dịch Vụ -->
+    <section class="services">
+        <div class="item">
+            <h3>Dịch Vụ Tắm Cho Thú Cưng</h3>
+            <p>Chúng tôi cung cấp dịch vụ tắm cho mọi loại thú cưng.</p>
+        </div>
+        <div class="item">
+            <h3>Dịch Vụ Cắt Lông Thú Cưng</h3>
+            <p>Cắt lông, tỉa tót cho thú cưng của bạn thêm đẹp.</p>
+        </div>
+        <div class="item">
+            <h3>Dịch Vụ Vệ Sinh Sức Khỏe</h3>
+            <p>Chúng tôi chăm sóc sức khỏe cho thú cưng của bạn.</p>
+        </div>
+        <div class="item">
+            <h3>Dịch Vụ Đào Tạo Thú Cưng</h3>
+            <p>Đào tạo những thói quen tốt cho thú cưng của bạn.</p>
+        </div>
+    </section>
+
+    <!-- Form đăng ký -->
+    <div class="container">
+        <h2>Đăng Ký Dịch Vụ Chăm Sóc Thú Cưng</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+                <div id="nameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Địa chỉ email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email">
+                <div id="emailError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                <div id="phoneError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="pet-type">Loại thú cưng:</label>
+                <select id="pet-type" name="pet-type">
+                    <option value="">Chọn loại thú cưng</option>
+                    <option value="chó">Chó</option>
+                    <option value="mèo">Mèo</option>
+                    <option value="khác">Khác</option>
+                </select>
+                <div id="petTypeError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Dịch vụ chăm sóc:</label>
+                <select id="service" name="service">
+                    <option value="">Chọn dịch vụ chăm sóc</option>
+                    <option value="tắm">Tắm cho thú cưng</option>
+                    <option value="cắt lông">Cắt lông cho thú cưng</option>
+                    <option value="chăm sóc sức khỏe">Chăm sóc sức khỏe</option>
+                    <option value="vệ sinh miệng">Vệ sinh miệng cho thú cưng</option>
+                </select>
+                <div id="serviceError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Mô tả nhu cầu:</label>
+                <input type="text" id="time" name="time" placeholder="Mô tả nhu cầu">
+                <div id="timeError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Họ tên: Nguyễn Văn A | Mã sinh viên: 123456 | Lớp: K18CT</p>
+    </footer>
 
     <script>
-        // Tạo chuỗi JSON chứa thông tin các dịch vụ
-        const services = [
-            {
-                name: "Tắm cho thú cưng",
-                image: "https://via.placeholder.com/300x200.png?text=Service+1",
-                description: "Dịch vụ tắm sạch sẽ và chăm sóc lông cho thú cưng của bạn.",
-                price: "200,000 VND"
-            },
-            {
-                name: "Cắt tỉa lông",
-                image: "https://via.placeholder.com/300x200.png?text=Service+2",
-                description: "Cắt tỉa lông, tạo kiểu cho thú cưng để chúng luôn gọn gàng và xinh đẹp.",
-                price: "150,000 VND"
-            },
-            {
-                name: "Tiêm phòng",
-                image: "https://via.placeholder.com/300x200.png?text=Service+3",
-                description: "Cung cấp các loại vắc-xin cần thiết cho thú cưng của bạn.",
-                price: "100,000 VND"
-            },
-            {
-                name: "Chăm sóc sức khỏe",
-                image: "https://via.placeholder.com/300x200.png?text=Service+4",
-                description: "Khám sức khỏe định kỳ cho thú cưng và tư vấn về dinh dưỡng.",
-                price: "300,000 VND"
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Ngừng gửi form nếu có lỗi
+
+            // Xóa các lỗi cũ
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('phoneError').innerText = '';
+            document.getElementById('petTypeError').innerText = '';
+            document.getElementById('serviceError').innerText = '';
+            document.getElementById('timeError').innerText = '';
+
+            let isValid = true;
+
+            // Kiểm tra họ và tên
+            const name = document.getElementById('name').value;
+            if (name === '') {
+                document.getElementById('nameError').innerText = 'Vui lòng nhập họ và tên.';
+                isValid = false;
             }
-        ];
 
-        // Sử dụng vòng lặp while để in thông tin các dịch vụ
-        let i = 0;
-        const container = document.getElementById("services-container");
+            // Kiểm tra email
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (email === '') {
+                document.getElementById('emailError').innerText = 'Vui lòng nhập địa chỉ email.';
+                isValid = false;
+            } else if (!emailRegex.test(email)) {
+                document.getElementById('emailError').innerText = 'Địa chỉ email không hợp lệ.';
+                isValid = false;
+            }
 
-        while (i < services.length) {
-            const service = services[i];
-            
-            // Tạo phần tử div cho mỗi dịch vụ
-            const serviceDiv = document.createElement("div");
-            serviceDiv.classList.add("service");
+            // Kiểm tra số điện thoại
+            const phone = document.getElementById('phone').value;
+            const phoneRegex = /^\d{10}$/;
+            if (phone === '') {
+                document.getElementById('phoneError').innerText = 'Vui lòng nhập số điện thoại.';
+                isValid = false;
+            } else if (!phoneRegex.test(phone)) {
+                document.getElementById('phoneError').innerText = 'Số điện thoại không hợp lệ.';
+                isValid = false;
+            }
 
-            // Tạo nội dung cho div
-            serviceDiv.innerHTML = `
-                <h2>${service.name}</h2>
-                <img src="${service.image}" alt="${service.name}">
-                <p><strong>Mô tả:</strong> ${service.description}</p>
-                <p><strong>Giá:</strong> ${service.price}</p>
-            `;
+            // Kiểm tra loại thú cưng
+            const petType = document.getElementById('pet-type').value;
+            if (petType === '') {
+                document.getElementById('petTypeError').innerText = 'Vui lòng chọn loại thú cưng.';
+                isValid = false;
+            }
 
-            // Thêm phần tử div vào container
-            container.appendChild(serviceDiv);
+            // Kiểm tra dịch vụ chăm sóc
+            const service = document.getElementById('service').value;
+            if (service === '') {
+                document.getElementById('serviceError').innerText = 'Vui lòng chọn dịch vụ chăm sóc.';
+                isValid = false;
+            }
 
-            // Tăng chỉ số i để tiếp tục vòng lặp
-            i++;
-        }
+            // Kiểm tra thời gian chăm sóc
+            const time = document.getElementById('time').value;
+            if (time === '') {
+                document.getElementById('timeError').innerText = 'Vui lòng nhập chính xác nhu cầu';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Đăng ký thành công!');
+                // Gửi form hoặc xử lý tiếp theo tại đây
+            }
+        });
     </script>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Đăng Ký Dịch Vụ Chăm Sóc Thú Cưng</title>
-        <style>
-            /* Định dạng chung */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f7f7f7; /* Nền sáng hơn */
-            }
-    
-            .container {
-                width: 100%;
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: white;
-                border-radius: 10px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-    
-            h2 {
-                text-align: center;
-                color: #4CAF50; /* Xanh lá cây sáng */
-            }
-    
-            .form-group {
-                margin-bottom: 15px;
-            }
-    
-            label {
-                display: block;
-                margin-bottom: 5px;
-                font-size: 14px;
-            }
-    
-            input[type="text"], input[type="email"], input[type="tel"], select, input[type="submit"] {
-                width: 100%;
-                padding: 10px;
-                font-size: 14px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                box-sizing: border-box;
-            }
-    
-            input[type="submit"] {
-                background-color: #78be20; /* Màu cam nổi bật */
-                color: white;
-                cursor: pointer;
-            }
-    
-            input[type="submit"]:hover {
-                background-color: #614d00; /* Màu cam đậm hơn khi hover */
-            }
-    
-            .error {
-                color: red;
-                font-size: 12px;
-            }
-    
-            /* Thiết kế đáp ứng */
-            @media (max-width: 414px) {
-                .container {
-                    width: 90%;
-                    padding: 15px;
-                }
-            }
-    
-            @media (min-width: 415px) and (max-width: 1024px) {
-                .container {
-                    width: 80%;
-                    padding: 20px;
-                }
-            }
-    
-            @media (min-width: 1025px) {
-                .container {
-                    width: 50%;
-                    padding: 30px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-    
-        <div class="container">
-            <h2>Đăng Ký Dịch Vụ Chăm Sóc Thú Cưng</h2>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <label for="name">Họ và tên:</label>
-                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
-                    <div id="nameError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="email">Địa chỉ email:</label>
-                    <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email">
-                    <div id="emailError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="phone">Số điện thoại:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
-                    <div id="phoneError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="pet-type">Loại thú cưng:</label>
-                    <select id="pet-type" name="pet-type">
-                        <option value="">Chọn loại thú cưng</option>
-                        <option value="chó">Chó</option>
-                        <option value="mèo">Mèo</option>
-                        <option value="khác">Khác</option>
-                    </select>
-                    <div id="petTypeError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="service">Dịch vụ chăm sóc:</label>
-                    <select id="service" name="service">
-                        <option value="">Chọn dịch vụ chăm sóc</option>
-                        <option value="tắm">Tắm cho thú cưng</option>
-                        <option value="cắt lông">Cắt lông cho thú cưng</option>
-                        <option value="chăm sóc sức khỏe">Chăm sóc sức khỏe</option>
-                        <option value="vệ sinh miệng">Vệ sinh miệng cho thú cưng</option>
-                    </select>
-                    <div id="serviceError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="time">Mô tả nhu cầu:</label>
-                    <input type="text" id="time" name="time" placeholder="Mô tả nhu cầu">
-                    <div id="timeError" class="error"></div>
-                </div>
-    
-                <div class="form-group">
-                    <input type="submit" value="Đăng ký">
-                </div>
-            </form>
-        </div>
-    
-        <script>
-            document.getElementById('registrationForm').addEventListener('submit', function(event) {
-                event.preventDefault();  // Ngừng gửi form nếu có lỗi
-    
-                // Xóa các lỗi cũ
-                document.getElementById('nameError').innerText = '';
-                document.getElementById('emailError').innerText = '';
-                document.getElementById('phoneError').innerText = '';
-                document.getElementById('petTypeError').innerText = '';
-                document.getElementById('serviceError').innerText = '';
-                document.getElementById('timeError').innerText = '';
-    
-                let isValid = true;
-    
-                // Kiểm tra họ và tên
-                const name = document.getElementById('name').value;
-                if (name === '') {
-                    document.getElementById('nameError').innerText = 'Vui lòng nhập họ và tên.';
-                    isValid = false;
-                }
-    
-                // Kiểm tra email
-                const email = document.getElementById('email').value;
-                const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                if (email === '') {
-                    document.getElementById('emailError').innerText = 'Vui lòng nhập địa chỉ email.';
-                    isValid = false;
-                } else if (!emailRegex.test(email)) {
-                    document.getElementById('emailError').innerText = 'Địa chỉ email không hợp lệ.';
-                    isValid = false;
-                }
-    
-                // Kiểm tra số điện thoại
-                const phone = document.getElementById('phone').value;
-                const phoneRegex = /^\d{10}$/;
-                if (phone === '') {
-                    document.getElementById('phoneError').innerText = 'Vui lòng nhập số điện thoại.';
-                    isValid = false;
-                } else if (!phoneRegex.test(phone)) {
-                    document.getElementById('phoneError').innerText = 'Số điện thoại không hợp lệ.';
-                    isValid = false;
-                }
-    
-                // Kiểm tra loại thú cưng
-                const petType = document.getElementById('pet-type').value;
-                if (petType === '') {
-                    document.getElementById('petTypeError').innerText = 'Vui lòng chọn loại thú cưng.';
-                    isValid = false;
-                }
-    
-                // Kiểm tra dịch vụ chăm sóc
-                const service = document.getElementById('service').value;
-                if (service === '') {
-                    document.getElementById('serviceError').innerText = 'Vui lòng chọn dịch vụ chăm sóc.';
-                    isValid = false;
-                }
-    
-                // Kiểm tra thời gian chăm sóc
-                const time = document.getElementById('time').value;
-                if (time === '') {
-                    document.getElementById('timeError').innerText = 'Vui lòng nhập chính xác nhu cầu';
-                    isValid = false;
-                }
-    
-                if (isValid) {
-                    alert('Đăng ký thành công!');
-                    // Gửi form hoặc xử lý tiếp theo tại đây
-                }
-            });
-        </script>
-    
+
 </body>
 </html>
